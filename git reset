@@ -1,0 +1,5 @@
+git reset --hard xxx、git reset --soft xxx和git revert xxx 三者都是撤回的意思;
+三者区别：
+git reset --hard xxx是完全舍弃你没有提交的改动和将你本地库全部的操作的指针退回到指定操作；
+git reset --soft xxx是从暂存区中撤回；
+git revert xxx是将在编辑器内修改的内容撤回。撤销一个提交的同时会创建一个新的提交。
