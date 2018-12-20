@@ -92,3 +92,71 @@ HTML简介
 2.内联元素通常出现在块级元素中并被其它文本所包围.内联元素不会导致文本换行，如<A>，<em>, <strong>
 
 属性
+布尔属性
+比如<input> 被添加disabled 属性后，就接收不到用户输入了。
+<input type="text" disabled><input type="text">
+
+全局属性
+id, class，style,title 都是是全局属性，可以被任何 HTML 元素使用。
+hidden 可用于隐藏某个页面元素。
+<div class="notice" hidden>请先登录</div>
+contenteditable全局属性可以使元素内容变成可编辑。
+<p contenteditable>hhhh <p>
+
+单引号或者双引号?
+都行
+<a href="http:/ /www. example.com">A link to my example. </a>
+<a href='http:/ /www. example.com'>A link to my example.</a>
+<a href="http://www.example.com" title="Isn't this fun?">A link to my example.<a>
+
+在HTML中包含特殊字符
+显示    代码
+<       &lt
+>       &gt
+"       &quot
+'       &apos
+&       &amp
+
+<p>在HTML 里，你可以用&lt;p&gt;来表示段落。<p>
+
+注释：
+<p>老板尓真英明! <p>
+<!- <p>我老板是僂X! </p> ->
+
+快捷鍵:在VSCode里按ctrl + /或command + /注釋代碍。
+参考筵接
+* https://developer.mozlla.org/en-US/docs/Web/HTML/Globa_attributes
+· https://developer.mozilla org/zh-CN/docs/Learn/HTML/Introduction_to_HTML/Getting_started
+
+
+HTML 头部
+<head> 的内容不会在浏览器中显示， 它的作用是包含些页面的元数据。
+元数据(Metadata）福述数据的数据(a set of data that describes and gives information about other
+data)
+<head>
+<meta charset="utf-8>
+<meta mame="viewport" content="width=device-width, initial-scale=1.0">
+<title>李博区</title> 
+</head>
+<title>是用来表示整个HTML文档大致内容的元数据(不是文档的内容)
+元数据  <meta>
+指定文档编码
+<meta charset="utf-8">
+适配移动页面
+<meta nane="viewport" content="width=device-width, initial-scale=1.0">
+定制页面图标
+<link rel="shortcut icon" hret="favicon. ico" type=" image/x-icon">
+设置referer
+cmeta name="referrer" content="never">
+添加页面描述
+<meta name="description" content="腾讯网(www.QQ.com)">   
+应用CSS和JS
+<link rel="stylesheet" href="app.css">
+<script src="app.js"></script>
+
+参考链接
+https://developer.mozilla. org/en-
+US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
+https://github.com/joshbuchea/HEAD
+
+
