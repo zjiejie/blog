@@ -220,3 +220,24 @@ git diff 查看详细变化
 搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门
 Git 菜鸟教程
 廖雪峰的 Git 教程
+
+
+
+使用 GitHub Pages 预览 HTML
+注意只能预览 HTML，不能预览 Markdown。
+
+在 GitHub 新建一个仓库 x1
+在 x1 里面新建一个 HTML 比如 y1.html，文件内容为「<h1>这是一个HTML</h1>」
+新建文件的方法可以是使用 git add git commit git push
+也可以是直接在网页上操作，随便你怎么新建文件
+点击 Settings
+往下滚动页面
+选中 master branch 然后点击 Save
+图片
+图片
+得到一个预览链接，假设预览链接是 https://zzzzzzzzz/
+图片
+图片
+访问 https://zzzzzzzzz/y1.html 即可预览 y1.html
+新建 y2.html，git add git commit git push，等一分钟，访问 https://zzzzzzzzz/y2.html 即可预览 y2.html
+新建 y3.html，git add git commit git push，等一分钟，访问 https://zzzzzzzzz/y3.html 即可预览 y3.html
