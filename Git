@@ -1,1 +1,63 @@
+URL是什么
+●URL: 统资源定位符，用于定位互联网上的资源
+●http、https、ftp、file协议
+http://jirengu.com/blog
+file:///Users/hunger/workspace/a.html
+https://10.245.23.456:3000/users//jirengu.com/static/imgs/a.png
+https 协议安全
 
+第二步.域名解析
+对于http://jirengu .com的URL,浏览器实际上不知道jirengu .com到底是什么
+东西，需要查找jirengu.com网站所在服务器的IP地址，才能找到目标
+
+域名是什么
+对于httpi//lrongu , com 8080/b1og , j1rongu ，com就是城名
+
+IP地址是什么
+每个处于互联网中的设备都有IP地址，形如192.168.0.1
+局域网IP和公网IP是有差别的
+127. 0.0.1代表本机的IP
+  
+域名解析的流程
+1.浏览器缓存-浏览器会缓存DNS记录一段时间
+2,系统缓存-从Hosts文件查找是否有该城名和对应IP.
+3.路由器缓存-一般路由器也会缓存域名信息。
+4. ISP DNS缓存-比如到电信的DNS上查找缓存。
+5.如果都没有找到，则向根域名服务器查找域名对应IP,根域名服务器把请求转发到下一级，知道找到IP
+ 1,电脑上不了网，为什么修改dns为8.8.8.8（谷歌）或者114.114.114.114（国内）?
+ 2,dns劫持是什么?（黑客 最大危害）
+ 
+ 第三步.服务器处理
+服务器是一台安装系统的机器 ，常见的系统如Linux、windows server 2012
+系统里安装的处理请求的应用叫Web server
+
+Web服务器
+.常见的web服务器有Apache, Nginx、 IS、Lightpd
+●web服务器接收用户的Request交给网站代码,或者接受请求反向代理到其他web服务器
+http://jscode.me----http://jirengu.com---nginx----202.112.230.14-------/var/www/jirengu
+
+ 第四步 网络处理流程
+ MVC模型(model视图(view)控制器(controller）
+浏览器-users-路由-index-控制器（user_controller.rb）-wser.all-模型（user.rb）-数据库-模型（user.rb）-users-视图(index.html.erb)-html-控制器（user_controller.rb）-html-浏览器
+ 
+ 浏览器处理
+HTML字符串被浏览器接受后被-旬句读取解析
+解析到link标签后重新发送请求获取CSS
+解析到script标签后发送请求获取js,并执行代码
+解析到img标签后发送请求获取图片资源
+
+绘制网页
+浏览器根据HTML和CSS计算得到渲染树，绘制到屏幕上]s会被执行
+
+Git 使用
+Git使用初尝试
+1.新建项目来操作：
+New repository-写名字，选1和3，点击create repository-clone download，点击use https-复制地址到本地 git clone git@GitHub.com jirengu/blog.git
+wingoe@ruoyui:/workspaco/qit/kejian-uoyo-xisoguu$ glt clone glt@github.com：jirengu/blog.git
+点击头像-New SSH key-SSH and GPG keys -添加钥匙 
+
+
+2.克已有项目来操作
+
+
+ 
