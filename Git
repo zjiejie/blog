@@ -54,10 +54,138 @@ Git使用初尝试
 1.新建项目来操作：
 New repository-写名字，选1和3，点击create repository-clone download，点击use https-复制地址到本地 git clone git@GitHub.com jirengu/blog.git
 wingoe@ruoyui:/workspaco/qit/kejian-uoyo-xisoguu$ glt clone glt@github.com：jirengu/blog.git
-点击头像-New SSH key-SSH and GPG keys -添加钥匙 
-
+设置公钥：点击头像-New SSH key-SSH and GPG keys -添加钥匙 
+ssh-krygen-t rsa -b 4096 -c "你的邮箱"
+git add.
+git push
+git commit -m
 
 2.克已有项目来操作
+
+
+
+
+Git 
+关于版本控制
+版本控制是-种记录心个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。
+本地版本控制系统
+集中式版本控制系统(SVN).
+分布式版本控制系统(Git) 
+
+Git优势
+诞生自2005，Linux开源社区
+速度
+简单的设计
+允许上千个并行分支分布式
+
+重要概念
+已提交(mommitted)该文件已经被安全地保存在本地数据库中了
+已修改(modified)修改了某个文件，但还没有提交保存
+已暂存(staged)把已修改的文件放在下次提交时要保存的清单中
+
+起步
+初次使用需要设置姓名和邮箱
+git config --global user.name ”你的姓名“
+git config --global user.email johndoe@example.com
+clone项目
+用于把一个GitHub是的项目clone(下载)到本地变为本地仓库
+git clone git@github. com: jirengu/blog.git
+cd blog
+添加文件并提交
+创建文件
+touch a.md
+在文件里写入一个字符串
+echo "hello" > a.md
+git status
+把当前目录下的新增和修改的文件添加到暂存区
+git add .
+git status
+
+把暂存区的更新提交到本地库
+git commit-am"add file"
+git status
+git push (origin master)
+
+git pull 
+git add .
+git commit-am
+git push
+
+git pull  把远程仓库的变动更新合并到本地仓库
+vim a.md  修改文件
+git add .
+git commit-a  （这里需要注意，如果提交消息包含大量字符串，提交参数不用加m；此时会进入vim界面，按i进入编辑状态，进行编辑；编辑完成后按下esc进入命令态，输入：wq保存退出vim）
+git push origin master （如果之前已经git push origin master 过，后面可以直接简化成git push ）
+
+rm -rf a.md
+git addd .
+git commit -am "删除a.md"
+
+
+复杂使用
+  
+本地创建一个git项目推送到远程空仓
+mkdir newProject
+cd new Project
+.把一个文件夹初始化成一个本地git 仓库
+.注意仓库和文件央的区别在于仓库下有一个隐藏的.git文件央， 里面有一些信息
+.对于一个仓库，删除.git文件夹，就变成一个普通文件夹了
+git init 初始化仓库
+
+touch index.html
+echo "hello" > index.html
+git add .
+git commit -am "init ”
+
+本地创建一个Git项目推送到远程仓库
+查看本地仓库里记录的远程库地址
+git remote-v
+这里把远程库的地址添加个标签叫origin
+git remoteaddorigingit@github。com：jirengu/blog2.git
+推送到远程库地址
+git push origin master
+慎用，这样会强制推送，会覆盖别人的代码
+git push -f origin master
+在添加一个远程库的标签
+git remote add gitlab git@gitlab.com:abc/blog.git
+推送到gitlab标签的地址上
+giy push gitlab master
+删除gitlab 标签
+git remote remove gitlab
+修改origin标签对应的地址
+git remote set-url origin git@github.com:jirengu/blog3.git
+把gitlab标签改名为coding
+git remote rename gitlab coding
+
+分支操作
+创建本地库dev分支
+git branch dev
+
+切换dev 分支
+git checkout dev
+
+touch b.md
+git add .
+git commit -am b.md
+
+推送到origin地址的dev分支上
+git push origin dev
+
+git checkout master
+把dev分支上额内容合并到当前分支（master）上
+gitmerge dev
+
+冲突
+当自己和别人改同一个文件的同一个地方，在执行git pulI时更新本地合并时会出现冲突
+1.修改冲突文件2.重新提交
+
+
+
+
+
+
+
+
 
 
  
