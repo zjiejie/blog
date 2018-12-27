@@ -186,6 +186,235 @@ Email链接表 单相关标签
 </a>
 
 
+下载链接
+<A href="https://angular.io/resources/imges/logos/angular/angular.svy" download>下羲Angul
+电话链接
+<a href="tel:8613701234567">+86 13701234567</a>
+Emaill链接
+<a href="maitto:xidada@china gov.cn">笈對郎件蚰刃大大</a> <br>
+<a href=“”maito：xidada@china。gov.cn?cc=penliyuan@china.gov.cn">仲櫨可大大井杪迭萋一天人*
+爰對鄭件給刃大大
+友封郵件姶刃大大井捗送第一夫人
+
+相对路径
+同一站点尽量使用相对路径。
+假设文件结构如下
+
+-index.html
+-images
+  Logo.png
+  background.png
+-styles/
+  app.css
+
+<!-- index.html -->
+<img src="images/logo.png">
+
+/*app.css*/
+. container{ 
+background:url('.../images/background.png);
+}
+
+绝对路径
+http://github.com/fe13/fe/blob/master/REAMDE.md
+
+参考链接
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
+https://developer.mozilla.org/en-US/docs/Web/HTML/Introduction to HTML/Creating hyperlinks
+
+
+
+
+图像
+<!--显示 Vue.js logo-->
+<img src="https://vuejs.org/images/Logo.png"alt="Vue.js Logo" width="200"> 最好不写width="200
+
+带说明的图像
+<figure>
+ <img src="https://imgsa.baidu.com/baike/c030baike180-2C542C592C1892C60/51gnmcbcb7644
+    alt="傍晚的珠海滑女雄像，旁边还有一群游客”
+     width="400"
+     height="300">
+<figcaption>傍晚的珠海渔女</figcaption>
+</figure>
+
+表格
+<tr>行
+<td>列
+
+视频
+<video>
+<video src="nba-finals2017-game-1.webm" controls>
+<p>你的浏览器不支持HTML5 视频，</p>
+</video>
+
+支持多种格式
+. WebM - Chrome和Firefox
+. MP4- IE和Safari
+. Ogg- 现在不怎么用了
+
+<video controls>
+<source src="nba-finals2017-game- 1. mp4" type="video/mp4">
+<source src="nba-finals2017-game -1.webm" type="video/webm">
+≤p≥你的浏览器不支持HTML5视频。</p>
+</video>
+
+更多video特性
+<video controls width="480" height="400"
+    autoplay loop muted
+     poster="nab-finals. png">
+<source src=" nbs-finals2017-game-1.webm . mp4" type="video/mp4">
+<source src"nba-finals2017-game-1. webm" type="video/webm">
+<p>KRBBT*H HTML5 TU5R. </p>
+</video>
+
+ 音频<audio>
+ <audio controls>
+   <source src"viper.mp3" type"audio/mp3">
+   <source srca"viper.ogg" typea"audio/ogg">
+   <p>你的浏览器不支持HTML5音频</p>
+  </audio>
+封面视频
+http://coverr.co
+
+参考链接
+. https://developer.mozila org/en-US/docs/Web/H7ML/Element/video
+https://developer.mozilao.org/en-US/Eemeaudhttps://developermozillao
+US/docs/L earn/HTML/Multimedia and. embedding/Video_ and. audio content. https//webkit org/blog/6784/new-video policies-for-ios/
+
+
+Emmet 常用语法介绍
+
+绝大多数代码编辑器都支持 Emmet 语法，下面介绍一些常见的 Emmet 语法快捷键，根据下面的教程打开 jsbin测试吧~， 更多使用方法参考Emmet 文档
+
+! 表示 输入!再按下 Tab
+
+场景1
+
+!
+生成
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+场景2
+
+p
+生成
+
+<p></p>
+场景3
+
+.header
+生成
+
+<div class="header"></div>
+场景4
+
+#header
+生成
+
+<div id="header"></div>
+场景5
+
+#header.logo
+生成
+
+<div id="header" class="logo"></div>
+场景6
+
+p#header.logo.layout
+生成
+
+<p id="header" class="logo layout"></p>
+场景7
+
+li*3
+生成
+
+  <li></li>
+  <li></li>
+  <li></li>
+场景8
+
+li*3>div.box
+生成
+
+  <li>
+    <div class="box"></div>
+  </li>
+  <li>
+    <div class="box"></div>
+  </li>
+  <li>
+    <div class="box"></div>
+  </li>
+场景9
+
+li*3>{hello}
+生成
+
+<li>hello</li>
+<li>hello</li>
+<li>hello</li>
+场景10
+
+li*3>{hello$}
+生成
+
+<li>hello1</li>
+<li>hello2</li>
+<li>hello3</li>
+场景11
+
+#header+#content+#footer
+生成
+
+  <div id="header"></div>
+  <div id="content"></div>
+  <div id="footer"></div>
+场景12
+
+(#header>.logo+.nav)+#content+#footer
+生成
+
+<div id="header">
+  <div class="logo"></div>
+  <div class="nav"></div>
+</div>
+<div id="content"></div>
+<div id="footer"></div>
+
+
+工具推荐
+
+视频中用到两个工具
+
+http-server
+
+打开终端或者 gitbash，输入
+
+npm install -g http-server
+即安装成功（如果提示命令不存在，需要先下载安装 nodejs），安装后切换到对应目录，启动静态服务器，如
+
+cd ~/Desktop/你的文件夹
+http-server
+命令行翻译工具
+
+打开终端或者 gitbash，输入
+
+npm install -g fanyi
+然后在终端下输入
+
+fanyi 你好
+即可进行及时翻译
 
 
 
