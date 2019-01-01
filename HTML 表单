@@ -3,3 +3,81 @@
 3.get 向后台提交数据    所有的请求方式把所有的URL参数拼接，         适用于向后台要数据，对于安全性要求低的
 3.post 向后台提交数据   请求的URL不会发生变化，登录更安全 ，可以自动截断URL长度    适用于向后台传数据，要求安全性高的
   get与post的区别：方式 安全 数量
+form
+form标签是表单的外壳，主要有四个属性
+1.action：表单提交的地址
+2.method：提交保单的方法
+3.target：在何处打开action
+4.enctype：
+  application/x-www-form-urlencoded:在发送前编码所有字符（默认）
+  text/plain：空格转换为"+"加号，但不对特殊字符编码
+  multipart/form-data:使用包含文件上传控件的表单时，必须使用该值
+
+password 输入内容自动变成圆点
+
+type="checkbox" name都一样是多选
+type="radio" 是单选 name一样是一组
+value=""  写内容，默认情况是on
+type="file"上传文件
+select 下拉菜单 加上select 是默认
+textarea 换行 大的输入框
+type="hidden" 占存一些东西，安全
+
+placeholder 提示语
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login">
+        <input type="text" name="sex">
+        <form action="/getInfo" method="get">
+            <div class="submit">
+                <button>提交</button>
+            </div>
+            <div class="username">
+                <label for="username">姓名</label>
+                <input id="username" type="text" name="username" value="zhang">
+            </div>
+            <div class="password">
+                <label for="password">密码</label>
+                <input id="password" type="password" name="password" placeholder="请输入密码">
+            </div>
+            <div class="hobby">
+                <label>爱好</label>
+                <input type="checkbox" name="hobby" value="read">读书
+                <input type="checkbox" name="hobby" value="music">听歌
+                <input type="checkbox" name="hobby" value="study">学习
+            </div>
+            <div class="sex">
+                <label>性别</label>
+                <input type="radio" name="sex" value="男">男
+                <input type="radio" name="sex" value="女">女
+            </div>
+            <div class="file">
+                <input type="file" name="myfile" acceppt="image/png">
+            </div>
+            <div class="select">
+                <select name="city">
+                    <option value="beijing">北京</option>
+                    <option value="shanghai">上海</option>
+                </select>
+            </div>
+            <div class="textarea">
+                <textarea name="article">
+                    hhhhh
+                </textarea>
+                <input type="hidden" name="csrf" value="123123123265">
+                <input type="button"  value="button">
+                <input type="submit"  value="submit">
+                <input type="reset"  value="reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
